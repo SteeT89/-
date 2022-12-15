@@ -1,0 +1,1 @@
+func(X, Y, Z) :-Z is 2*(cos(X)^2+sin(Y)^2).
