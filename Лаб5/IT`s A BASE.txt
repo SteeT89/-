@@ -1,0 +1,13 @@
+character("warrior", "male", "hero").
+character("archer", "female", "antihero").
+character("magician", "female", "emeny").
+character("support", "male", "hero").
+character("assassin", "female", "antihero").
+spell("archer", "fire arrow", "distant").
+spell("support", "heal", "by range").
+spell("warrior", "lunge", "near").
+spell("assassin", "cut", "near").
+spell("magician", "fireball", "distant").
+attack(X):-spell(_,X,"near").
+guardians(X):-character(X,_,"hero").
+powergd(X):-character(X,"female",_), spell(X,_,"distant").
