@@ -1,0 +1,4 @@
+x = int(input())
+f1 = lambda x: x
+f2 = lambda x: x + f1(x)
+print(f2(f1(x)))
